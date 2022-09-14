@@ -21,5 +21,15 @@ namespace ApartmanOtomasyonCalisma
         {
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new BinaGelirleri().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new BinaGiderleri().Show(); 
+        }
     }
 }

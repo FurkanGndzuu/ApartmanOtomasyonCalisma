@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaGelirleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaGelirleri.Designer.cs">
+      <DependentUpon>BinaGelirleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinaGiderleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaGiderleri.Designer.cs">
+      <DependentUpon>BinaGiderleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BinaGelirleri.resx">
+      <DependentUpon>BinaGelirleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinaGiderleri.resx">
+      <DependentUpon>BinaGiderleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

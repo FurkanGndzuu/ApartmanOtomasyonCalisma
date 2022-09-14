@@ -1,0 +1,1 @@
+Data Source=DESKTOP-LDMU7VJ\SQLEXPRESS;Initial Catalog=ApartmanGelirGider;Integrated Security=True
