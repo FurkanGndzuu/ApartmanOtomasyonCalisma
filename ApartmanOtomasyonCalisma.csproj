@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelper.cs" />
     <EmbeddedResource Include="BinaGelirleri.resx">
       <DependentUpon>BinaGelirleri.cs</DependentUpon>
     </EmbeddedResource>
