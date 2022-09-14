@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.gelirBox = new System.Windows.Forms.GroupBox();
+            this.btnGelirEkle = new System.Windows.Forms.Button();
+            this.dateTarihPicker = new System.Windows.Forms.DateTimePicker();
+            this.txtParaMiktari = new System.Windows.Forms.TextBox();
+            this.cmbDaireNo = new System.Windows.Forms.ComboBox();
+            this.lblTarih = new System.Windows.Forms.Label();
+            this.lblParaMiktarı = new System.Windows.Forms.Label();
+            this.lblDaireNo = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
-            this.lblDaireNo = new System.Windows.Forms.Label();
-            this.lblParaMiktarı = new System.Windows.Forms.Label();
-            this.lblTarih = new System.Windows.Forms.Label();
-            this.cmbDaireNo = new System.Windows.Forms.ComboBox();
-            this.txtParaMiktari = new System.Windows.Forms.TextBox();
-            this.dateTarihPicker = new System.Windows.Forms.DateTimePicker();
-            this.btnGelirEkle = new System.Windows.Forms.Button();
             this.gelirBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,82 @@
             this.gelirBox.TabIndex = 0;
             this.gelirBox.TabStop = false;
             this.gelirBox.Text = "Gelir Ekle";
+            // 
+            // btnGelirEkle
+            // 
+            this.btnGelirEkle.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnGelirEkle.Location = new System.Drawing.Point(540, 111);
+            this.btnGelirEkle.Name = "btnGelirEkle";
+            this.btnGelirEkle.Size = new System.Drawing.Size(302, 57);
+            this.btnGelirEkle.TabIndex = 6;
+            this.btnGelirEkle.Text = "Ekle";
+            this.btnGelirEkle.UseVisualStyleBackColor = false;
+            this.btnGelirEkle.Click += new System.EventHandler(this.btnGelirEkle_Click);
+            // 
+            // dateTarihPicker
+            // 
+            this.dateTarihPicker.Location = new System.Drawing.Point(556, 44);
+            this.dateTarihPicker.Name = "dateTarihPicker";
+            this.dateTarihPicker.Size = new System.Drawing.Size(287, 34);
+            this.dateTarihPicker.TabIndex = 5;
+            // 
+            // txtParaMiktari
+            // 
+            this.txtParaMiktari.Location = new System.Drawing.Point(193, 117);
+            this.txtParaMiktari.Name = "txtParaMiktari";
+            this.txtParaMiktari.Size = new System.Drawing.Size(251, 34);
+            this.txtParaMiktari.TabIndex = 4;
+            // 
+            // cmbDaireNo
+            // 
+            this.cmbDaireNo.FormattingEnabled = true;
+            this.cmbDaireNo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cmbDaireNo.Location = new System.Drawing.Point(193, 43);
+            this.cmbDaireNo.Name = "cmbDaireNo";
+            this.cmbDaireNo.Size = new System.Drawing.Size(251, 35);
+            this.cmbDaireNo.TabIndex = 3;
+            // 
+            // lblTarih
+            // 
+            this.lblTarih.AutoSize = true;
+            this.lblTarih.Location = new System.Drawing.Point(463, 46);
+            this.lblTarih.Name = "lblTarih";
+            this.lblTarih.Size = new System.Drawing.Size(70, 27);
+            this.lblTarih.TabIndex = 2;
+            this.lblTarih.Text = "Tarih:";
+            // 
+            // lblParaMiktarı
+            // 
+            this.lblParaMiktarı.AutoSize = true;
+            this.lblParaMiktarı.Location = new System.Drawing.Point(25, 117);
+            this.lblParaMiktarı.Name = "lblParaMiktarı";
+            this.lblParaMiktarı.Size = new System.Drawing.Size(142, 27);
+            this.lblParaMiktarı.TabIndex = 1;
+            this.lblParaMiktarı.Text = "Para Miktarı:";
+            // 
+            // lblDaireNo
+            // 
+            this.lblDaireNo.AutoSize = true;
+            this.lblDaireNo.Location = new System.Drawing.Point(59, 46);
+            this.lblDaireNo.Name = "lblDaireNo";
+            this.lblDaireNo.Size = new System.Drawing.Size(108, 27);
+            this.lblDaireNo.TabIndex = 0;
+            this.lblDaireNo.Text = "Daire No:";
             // 
             // listBox1
             // 
@@ -89,81 +165,6 @@
             this.listBox3.Size = new System.Drawing.Size(223, 260);
             this.listBox3.TabIndex = 3;
             // 
-            // lblDaireNo
-            // 
-            this.lblDaireNo.AutoSize = true;
-            this.lblDaireNo.Location = new System.Drawing.Point(59, 46);
-            this.lblDaireNo.Name = "lblDaireNo";
-            this.lblDaireNo.Size = new System.Drawing.Size(108, 27);
-            this.lblDaireNo.TabIndex = 0;
-            this.lblDaireNo.Text = "Daire No:";
-            // 
-            // lblParaMiktarı
-            // 
-            this.lblParaMiktarı.AutoSize = true;
-            this.lblParaMiktarı.Location = new System.Drawing.Point(25, 117);
-            this.lblParaMiktarı.Name = "lblParaMiktarı";
-            this.lblParaMiktarı.Size = new System.Drawing.Size(142, 27);
-            this.lblParaMiktarı.TabIndex = 1;
-            this.lblParaMiktarı.Text = "Para Miktarı:";
-            // 
-            // lblTarih
-            // 
-            this.lblTarih.AutoSize = true;
-            this.lblTarih.Location = new System.Drawing.Point(463, 46);
-            this.lblTarih.Name = "lblTarih";
-            this.lblTarih.Size = new System.Drawing.Size(70, 27);
-            this.lblTarih.TabIndex = 2;
-            this.lblTarih.Text = "Tarih:";
-            // 
-            // cmbDaireNo
-            // 
-            this.cmbDaireNo.FormattingEnabled = true;
-            this.cmbDaireNo.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"});
-            this.cmbDaireNo.Location = new System.Drawing.Point(193, 43);
-            this.cmbDaireNo.Name = "cmbDaireNo";
-            this.cmbDaireNo.Size = new System.Drawing.Size(251, 35);
-            this.cmbDaireNo.TabIndex = 3;
-            // 
-            // txtParaMiktari
-            // 
-            this.txtParaMiktari.Location = new System.Drawing.Point(193, 117);
-            this.txtParaMiktari.Name = "txtParaMiktari";
-            this.txtParaMiktari.Size = new System.Drawing.Size(251, 34);
-            this.txtParaMiktari.TabIndex = 4;
-            // 
-            // dateTarihPicker
-            // 
-            this.dateTarihPicker.Location = new System.Drawing.Point(556, 44);
-            this.dateTarihPicker.Name = "dateTarihPicker";
-            this.dateTarihPicker.Size = new System.Drawing.Size(287, 34);
-            this.dateTarihPicker.TabIndex = 5;
-            // 
-            // btnGelirEkle
-            // 
-            this.btnGelirEkle.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnGelirEkle.Location = new System.Drawing.Point(540, 111);
-            this.btnGelirEkle.Name = "btnGelirEkle";
-            this.btnGelirEkle.Size = new System.Drawing.Size(302, 57);
-            this.btnGelirEkle.TabIndex = 6;
-            this.btnGelirEkle.Text = "Ekle";
-            this.btnGelirEkle.UseVisualStyleBackColor = false;
-            // 
             // BinaGelirleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -176,6 +177,7 @@
             this.Controls.Add(this.gelirBox);
             this.Name = "BinaGelirleri";
             this.Text = "BinaGelirleri";
+            this.Load += new System.EventHandler(this.BinaGelirleri_Load);
             this.gelirBox.ResumeLayout(false);
             this.gelirBox.PerformLayout();
             this.ResumeLayout(false);

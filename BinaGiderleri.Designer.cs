@@ -62,6 +62,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gider Ekle";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnGiderEkle
             // 
@@ -72,6 +73,7 @@
             this.btnGiderEkle.TabIndex = 8;
             this.btnGiderEkle.Text = "Gider Ekle";
             this.btnGiderEkle.UseVisualStyleBackColor = false;
+            this.btnGiderEkle.Click += new System.EventHandler(this.btnGiderEkle_Click);
             // 
             // dateTarihPicker
             // 
@@ -184,6 +186,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "BinaGiderleri";
             this.Text = "BinaGiderleri";
+            this.Load += new System.EventHandler(this.BinaGiderleri_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

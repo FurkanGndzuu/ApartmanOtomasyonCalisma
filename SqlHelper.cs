@@ -10,13 +10,13 @@ namespace ApartmanOtomasyonCalisma
 {
     internal class SqlHelper
     {
-        public string ConnectionString { get; set; }
+        private string ConnectionString { get; set; }
         public SqlConnection Connection { get; set; }
 
         public SqlHelper()
         {
-            Connection = new SqlConnection();
-            ConnectionString = @"Data Source=DESKTOP-LDMU7VJ\SQLEXPRESS;Initial Catalog=ApartmanGelirGider;Integrated Security=True";
+            Connection = new SqlConnection(ConnectionString);
+            ConnectionString = "Data Source=DESKTOP-LDMU7VJ\\SQLEXPRESS; Initial Catalog=ApartmanGelirGider; Integrated Security=True";
 
 
         }
