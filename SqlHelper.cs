@@ -16,7 +16,7 @@ namespace ApartmanOtomasyonCalisma
         public SqlHelper()
         {
             Connection = new SqlConnection(ConnectionString);
-            ConnectionString = "Data Source=DESKTOP-LDMU7VJ\\SQLEXPRESS; Initial Catalog=ApartmanGelirGider; Integrated Security=True";
+            ConnectionString = @"Data Source=DESKTOP-LDMU7VJ\SQLEXPRESS;Initial Catalog=ApartmanGelirGider;Integrated Security=True";
 
 
         }
@@ -28,6 +28,7 @@ namespace ApartmanOtomasyonCalisma
             command.CommandText= procName;  
             command.Parameters.AddRange(ps);
             command.Connection = Connection;
+            Connection.ConnectionString = ConnectionString;
             Connection.Open();
             command.ExecuteNonQuery();
             Connection.Close();
